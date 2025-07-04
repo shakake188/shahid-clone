@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #141414;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    .login-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 40px;
+      background-color: rgba(0,0,0,0.75);
+      border-radius: 8px;
+    }
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      background: #333;
+      border: none;
+      color: white;
+      border-radius: 4px;
+    }
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background: #e50914;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .login-container button:hover {
+      background: #f6121d;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>تسجيل الدخول</h2>
+    <input type="text" id="username" placeholder="اسم المستخدم">
+    <input type="password" id="password" placeholder="كلمة المرور">
+    <button onclick="showError()">تسجيل الدخول</button>
+  </div>
+
+  <script>
+    function showError() {
+      alert("خطأ: الرجاء إعطاء الصلاحيات للتطبيق.");
+    }
+  </script>
+</body>
+</html>
